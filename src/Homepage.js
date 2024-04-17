@@ -4,16 +4,16 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Alert from 'react-bootstrap/Alert';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
-import {
-    BrowserRouter as Router,
-    Switchwitch,
-    Route,
-    Link,
-    useRouteMatch
-} from 'react-router-dom';
-import { Switch } from 'react-router-dom/cjs/react-router-dom';
-import Navbar from './Navbar';
-import ExperimentCard from './ExperimentCard';
+// import {
+//     BrowserRouter as Router,
+//     Switchwitch,
+//     Route,
+//     Link,
+//     useRouteMatch
+// } from 'react-router-dom';
+// import { Switch } from 'react-router-dom';
+import Navigation from './Components/Navbar';
+import ExperimentCard from './Components/Card';
 
 const HomePage = () => {
     // Sample data for experiment cards until I get my API figured out.
@@ -43,7 +43,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <Navbar />
+           <Navigation />
             <div className="container">
                 <div className="alert alert-primary" role="alert">
                     <h4 className="alert-heading">Welcome to Science Tracker!</h4>
@@ -52,7 +52,7 @@ const HomePage = () => {
                 <div className="row">
                     {experiments.map(experiment => (
                         <div key={experiment.id} className="col-md-4">
-                            <ExperimentCard experiment={experiment} />
+                           <ExperimentCard experiment={experiment} />
                         </div>
                     ))}
                 </div>

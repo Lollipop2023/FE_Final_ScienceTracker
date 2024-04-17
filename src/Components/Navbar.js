@@ -1,8 +1,9 @@
 // Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Nav, Navbar } from 'react-bootstrap';
 
-const Navbar = () => {
+const Navigation = () => {
     
     const handleLogout = () => {
         // Once I get the login page figured out...This will be handy.
@@ -11,7 +12,7 @@ const Navbar = () => {
 //figure out how to change from list to router or switch again for pages.
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <Link to="/" className="navbar-brand">Science Tracker</Link>
+            <Nav.Link to="/" className="navbar-brand">Science Tracker</Nav.Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -19,19 +20,19 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <Link to="/" className="nav-link">Home</Link>
+                        <Nav.Link to="/" className="nav-link">Home</Nav.Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/experiment-instructions" className="nav-link">Instructions</Link>
+                        <Nav.Link to="/experiment-instructions" className="nav-link">Instructions</Nav.Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/experiment-categories" className="nav-link">Categories</Link>
+                        <Nav.Link to="/experiment-categories" className="nav-link">Categories</Nav.Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/experiments-progress" className="nav-link">Progress</Link>
+                        <Nav.Link to="/experiments-progress" className="nav-link">Progress</Nav.Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/add-experiment" className="nav-link">Add Experiment</Link>
+                        <Nav.Link to="/add-experiment" className="nav-link">Add Experiment</Nav.Link>
                     </li>
                 </ul>
                 <div className="dropdown">
@@ -47,4 +48,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navigation;
