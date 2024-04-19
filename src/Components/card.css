@@ -1,1 +1,102 @@
-.border-green {background-color: greenyellow;}
+
+/* Define styles for different categories */
+.card {
+    width: 18rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bg-physics {
+    background-color: blue; /* blue */
+  }
+  
+  .bg-chemistry {
+    background-color: orangered; /* orange */
+  }
+  
+  .bg-biology {
+    background-color: greenyellow; /* green */
+  }
+  .bg-null {
+    background-color:gray; /* gray */
+  }
+  
+
+
+
+/*.experiment-card {
+    .border-yellow {background-color: yellow;}
+}
+
+.experiment-card .switch {
+    width: 40px; 
+    height: 30px; 
+    position: relative;
+    display: inline-block;
+}
+
+.experiment-card .switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.experiment-card .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 15px; 
+}
+
+/* Rounded sliders */
+.experiment-card .switch .slider.round {
+    border-radius: 30px;
+}
+
+/* Change color based on category */
+.experiment-card .switch .slider.yellow {
+    background-color: yellow;
+}
+
+.experiment-card .switch .slider.orange {
+    background-color: orangered;
+}
+
+.experiment-card .switch .slider.green {
+    background-color: greenyellow;
+}
+
+.experiment-card .switch .slider.gray {
+    background-color: gray;
+} */
+
+/* Slider when checked */
+.experiment-card .switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(151, 35, 35);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.experiment-card .switch input:checked + .slider {
+    background-color: #2196F3; /* blue color */
+}
+
+.experiment-card .switch input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Disable slider when disabled */
+.experiment-card .switch input:disabled + .slider {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

@@ -1,6 +1,6 @@
 // This page should display the full experiment, with the option to "start" which then gives a note section.
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+import Navigation from './Components/NavigationBar';
 
 const ExperimentInstructionsPage = ({ experiment }) => {
     const [notes, setNotes] = useState("");
@@ -12,7 +12,7 @@ const ExperimentInstructionsPage = ({ experiment }) => {
 
     return (
         <div>
-            <Navbar />
+            <Navigation />
             <div className="container mt-4">
                 <h2>{experiment.title}</h2>
                 <hr />

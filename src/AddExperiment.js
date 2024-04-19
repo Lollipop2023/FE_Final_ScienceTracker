@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+import { Nav, Navbar } from 'react-bootstrap';
 
 const AddExperimentPage = ({ onAddExperiment }) => {
     const [title, setTitle] = useState("");
@@ -17,7 +17,7 @@ const AddExperimentPage = ({ onAddExperiment }) => {
             supplies,
             instructions
         };
-        //try to pass in as an object to function to make it update state.
+        //try to pass in as an object to the function to make it update state.
         onAddExperiment(newExperiment);
         setTitle("");
         setCategory("");

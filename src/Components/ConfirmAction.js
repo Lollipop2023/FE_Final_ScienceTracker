@@ -1,5 +1,5 @@
 import React from 'react';
-//Hoping to stop a lotof silly mistakes. Stop you from accidentally deleting your stuff!
+//Hoping to stop a lot of silly mistakes. Stop you from accidentally deleting your stuff!
 const ConfirmAction = ({ show, onConfirm, onCancel }) => {
     return (
         <div className={`modal fade ${show ? 'show' : ''}`} tabIndex="-1" role="dialog" style={{ display: show ? 'block' : 'none' }}>
