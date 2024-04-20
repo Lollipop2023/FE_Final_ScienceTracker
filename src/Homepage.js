@@ -1,12 +1,11 @@
 import Container from 'react-bootstrap/Container';
-// import {
-//     BrowserRouter as Router,
-//     Switch,
-//     Route,
-//     Link,
-//     useRouteMatch
-// } from 'react-router-dom';
-// import { Switch } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch
+} from 'react-router-dom';
 import Navigation from './Components/NavigationBar';
 import Card from './Components/Card';
 import React, { useState, useEffect } from 'react';

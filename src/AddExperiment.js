@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 const AddExperimentPage = ({ onAddExperiment }) => {
     const [title, setTitle] = useState("");
@@ -46,7 +46,7 @@ const AddExperimentPage = ({ onAddExperiment }) => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="category">Category:</label>
-                        <input /*figure out how to change to selectors instead of text*/
+                        <input 
                             type="text"
                             className="form-control"
                             id="category"

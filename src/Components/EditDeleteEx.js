@@ -3,13 +3,13 @@ import React from 'react';
 const EditDeleteExperiment = ({ onEdit, onDelete }) => {
     const handleEdit = () => {
         // Find a snippet for editing to add here so it works, maybe make passable as a prop?
-        console.log("Edit me!");
+        console.log("Fix me, you silly coder!");
         
     };
 
     const handleDelete = () => {
         // find a snippet here too. Maybe instead of prop, do by ID?
-        console.log("Delete me!");
+        console.log("It's too late, go on without me!");
     };
 
     return (

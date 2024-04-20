@@ -36,4 +36,3 @@ const ExperimentInstructionsPage = ({ experiment }) => {
 };
 
 export default ExperimentInstructionsPage;
-
